@@ -1,0 +1,178 @@
+* {
+    font-family: "popins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #d1d1d1 #fff;
+  overflow: hidden;
+}
+
+form{
+  display: flex;
+ flex-direction: column;
+
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(128, 85, 85);
+}
+section .color {
+  position: absolute;
+  filter: blur(150px);
+}
+section .color:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 600px;
+  background: #d390af;
+}
+section .color:nth-child(2) {
+  bottom: -150px;
+  left: 100px;
+  width: 500px;
+  height: 500px;
+  background: #8081a8;
+}
+section .color:nth-child(3) {
+  bottom: 50px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  background: hsla(0, 84%, 52%, 0.918);
+}
+
+
+/*log in main box design*/
+
+
+.mainbox{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+ height: 500px;
+ width: 750px;
+border: none;
+border-radius: 30px;
+backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(221, 29, 29, 1.3);
+  border: 1px solid rgba(177, 81, 81, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  background: #ccb2b2;
+ }
+ .mainbox:hover{
+  width: 850px; ;
+  height: 550px;
+ }
+ img{
+  width: 300px;
+  height: 350px;
+  margin-top: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+ }
+ img:hover{
+  width: 350px;
+  height: 380px;
+
+ }
+ h2{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: cadetblue;
+  margin-top: 50px;
+  font-weight: 550;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: indigo;
+ }
+ 
+ .frm{
+position: relative;
+width: 100%;
+height: 100%;
+padding: 40px;
+
+}
+input[type=text]{
+  width: 100%;
+  height: 40px;
+  margin-top: 50px;
+  border: none;
+  outline: none;
+  background: rgba(28, 138, 182, 0.2);
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #095086;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+input[type=password]{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: rgba(28, 138, 182, 0.2);
+  border-radius: 20px;
+  padding: 20px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #095086;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+input[type=button]{
+  border: none;
+  outline: none;
+  background: rgba(28, 138, 182, 0.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #620686;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+input:hover {
+  background: rgba(25, 9, 83, 0.2);
+  color: #260db3;
+}
+input::placeholder {
+  color: rgb(80, 14, 14);
+}
+input[type="button"] {
+  background: rgba(28, 138, 182, 0.2);
+  color: #666;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+input[type="button"]:hover{
+  color: rgb(231, 236, 231);
+  background: rgb(63, 10, 148);
+  width: 120px;
+  height: 50px;
+}
+.forget{
+  margin-top: 5px;
+  color: rgb(9, 37, 48);
+}
+.forget a:hover{
+  color: rgb(9, 223, 37);
+}
+
